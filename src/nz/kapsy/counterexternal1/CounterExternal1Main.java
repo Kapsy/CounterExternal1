@@ -107,6 +107,7 @@ public class CounterExternal1Main extends Activity {
 		@Override
 		public void print(String s) {
 			post(s);
+			
 		}
 
 		@Override
