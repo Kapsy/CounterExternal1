@@ -11,8 +11,8 @@
    of checking -- I will not bother, until there is some feedback. */
 
 #include "m_pd.h"
-#include "common/loud.h"
-#include "common/fitter.h"
+#include "loud.h"
+#include "fitter.h"
 
 #define COUNTER_UP      0
 #define COUNTER_DOWN    1

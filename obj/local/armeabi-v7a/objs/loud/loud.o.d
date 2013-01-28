@@ -1,4 +1,4 @@
-obj/local/armeabi/objs/fitter/fitter.o: jni/fitter.c \
+obj/local/armeabi-v7a/objs/loud/loud.o: jni/loud.c \
  /cygdrive/c/android/android-ndk-r8d/platforms/android-14/arch-arm/usr/include/stdio.h \
  /cygdrive/c/android/android-ndk-r8d/platforms/android-14/arch-arm/usr/include/sys/cdefs.h \
  /cygdrive/c/android/android-ndk-r8d/platforms/android-14/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -17,8 +17,13 @@ obj/local/armeabi/objs/fitter/fitter.o: jni/fitter.c \
  /cygdrive/c/android/android-ndk-r8d/platforms/android-14/arch-arm/usr/include/sys/sysmacros.h \
  /cygdrive/c/android/android-ndk-r8d/platforms/android-14/arch-arm/usr/include/string.h \
  /cygdrive/c/android/android-ndk-r8d/platforms/android-14/arch-arm/usr/include/malloc.h \
+ /cygdrive/c/android/android-ndk-r8d/platforms/android-14/arch-arm/usr/include/errno.h \
+ /cygdrive/c/android/android-ndk-r8d/platforms/android-14/arch-arm/usr/include/linux/errno.h \
+ /cygdrive/c/android/android-ndk-r8d/platforms/android-14/arch-arm/usr/include/asm/errno.h \
+ /cygdrive/c/android/android-ndk-r8d/platforms/android-14/arch-arm/usr/include/asm-generic/errno.h \
+ /cygdrive/c/android/android-ndk-r8d/platforms/android-14/arch-arm/usr/include/asm-generic/errno-base.h \
  jni/../../../pd-for-android/PdCore/jni/libpd/pure-data/src/m_pd.h \
- jni/fitter.h
+ jni/loud.h
 
 /cygdrive/c/android/android-ndk-r8d/platforms/android-14/arch-arm/usr/include/stdio.h:
 
@@ -56,6 +61,16 @@ obj/local/armeabi/objs/fitter/fitter.o: jni/fitter.c \
 
 /cygdrive/c/android/android-ndk-r8d/platforms/android-14/arch-arm/usr/include/malloc.h:
 
+/cygdrive/c/android/android-ndk-r8d/platforms/android-14/arch-arm/usr/include/errno.h:
+
+/cygdrive/c/android/android-ndk-r8d/platforms/android-14/arch-arm/usr/include/linux/errno.h:
+
+/cygdrive/c/android/android-ndk-r8d/platforms/android-14/arch-arm/usr/include/asm/errno.h:
+
+/cygdrive/c/android/android-ndk-r8d/platforms/android-14/arch-arm/usr/include/asm-generic/errno.h:
+
+/cygdrive/c/android/android-ndk-r8d/platforms/android-14/arch-arm/usr/include/asm-generic/errno-base.h:
+
 jni/../../../pd-for-android/PdCore/jni/libpd/pure-data/src/m_pd.h:
 
-jni/fitter.h:
+jni/loud.h:

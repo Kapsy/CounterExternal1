@@ -31,7 +31,6 @@ public class CounterExternal1Main extends Activity {
 			// TODO 自動生成された catch ブロック
 			e.printStackTrace();
 		}
-		
 		//PdAudio.startAudio(this);
 	}
 	
