@@ -30,6 +30,8 @@ public class CounterExternal1Main extends Activity {
 		} catch (IOException e) {
 			// TODO 自動生成された catch ブロック
 			e.printStackTrace();
+			
+			
 		}
 		//PdAudio.startAudio(this);
 	}
@@ -43,6 +45,10 @@ public class CounterExternal1Main extends Activity {
 	@Override
 	protected void onStop() {
 		PdAudio.stopAudio();
+//		PdAudio.release();
+//		PdBase.closeAudio();
+//		PdBase.clearSearchPath();
+		
 		super.onStop();
 	}
 	
@@ -63,15 +69,19 @@ public class CounterExternal1Main extends Activity {
 		
 //		AudioParameters.init(this);
 //		int srate = Math.max(MIN_SAMPLE_RATE, AudioParameters.suggestSampleRate());
+		
+		PdBase.addToSearchPath("/data/data/" + getPackageName() + "/lib");
 		PdAudio.initAudio(22050, 0, 2, 1, true);
 		
 //		File dir = getFilesDir();
 //		File patchFile = new File(dir, "count_1.pd");
 //		IoUtils.extractZipResource(getResources().openRawResource(R.raw.count_1), dir, true);
 //		PdBase.openPatch(patchFile.getAbsolutePath());
-				
+		
+		//PdBase.unsubscribe("counter");
 		PdBase.setReceiver(receiver);
 		PdBase.subscribe("counter");		
+		
 		
 		InputStream in = res.openRawResource(R.raw.count_1);
 		patchfile = IoUtils.extractResource(in, "count_1.pd", getCacheDir());
