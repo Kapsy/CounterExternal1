@@ -52,6 +52,25 @@ public class CounterExternal1Main extends Activity {
 		super.onStop();
 	}
 	
+		@Override
+	protected void onPause() {
+		super.onPause();
+		PdAudio.stopAudio();
+	}
+	
+	@Override
+	protected void onResume() {
+		super.onResume();
+		PdAudio.startAudio(this);
+		Log.d("onResume", "onResume() called");
+	}
+	
+	@Override
+	protected void onDestroy() {
+		super.onDestroy();
+				PdAudio.release();
+		PdBase.release();
+	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
